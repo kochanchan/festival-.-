@@ -1,0 +1,164 @@
+
+/* 画面全体 */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: white;
+  font-family: sans-serif;
+}
+
+
+/* ログイン画面 */
+
+.window {
+  width: 100vw;
+  min-height: 100vh;
+
+  background: white;
+}
+
+
+/* 上のバー */
+
+.topbar {
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+/* 上のタイトル */
+
+.topbar h2 {
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+/* ×ボタン */
+
+.closeBtn {
+  position: absolute;
+  left: 10px;
+
+  border: none;
+  background: none;
+
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* 中身 */
+
+.content {
+  padding: 35px;
+  text-align: center;
+}
+
+
+/* ログイン文字 */
+
+.content h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+/* 入力欄 */
+
+input {
+  width: 90%;
+  padding: 10px;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 15px;
+}
+
+
+/* アカウント作成 */
+
+.createLink {
+  text-align: left;
+  margin-left: 10px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+
+/* 次へボタン・OKボタン */
+
+.nextBtn,
+.okBtn {
+  padding: 8px 18px;
+
+  background: white;
+
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+/* 次へボタン */
+
+.nextBtn {
+  float: right;
+}
+
+
+/* パスワードエリア */
+
+.passwordArea {
+  width: 90%;
+
+  margin: 0 auto 25px;
+
+  position: relative;
+}
+
+
+/* パスワード入力欄 */
+
+.passwordArea input {
+  width: 100%;
+
+  padding: 10px;
+  padding-right: 45px;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 0;
+}
+
+
+/* 🐵ボタン */
+
+.passwordArea button {
+  position: absolute;
+
+  right: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: none;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+/* 非表示 */
+
+.hidden {
+  display: none;
+}

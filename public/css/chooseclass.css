@@ -1,0 +1,68 @@
+/* 画面全体 */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: white;
+
+  font-family: sans-serif;
+}
+
+
+/* ページ */
+
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* タイトル */
+
+h1 {
+  margin-bottom: 40px;
+
+  font-size: 28px;
+  text-align: center;
+
+  line-height: 1.4;
+}
+
+
+/* ボタン */
+
+.classBtn {
+  width: 230px;
+
+  padding: 10px;
+
+  margin-bottom: 20px;
+
+  background: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+
+/* アイコン */
+
+.icon {
+  margin-right: 8px;
+}
+
+
+/* 説明 */
+
+.note {
+  margin-top: -10px;
+
+  font-size: 14px;
+}

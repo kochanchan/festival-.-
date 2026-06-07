@@ -1,0 +1,119 @@
+<!-- login画面 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <!-- 文字コード -->
+  <meta charset="UTF-8">
+
+  <!-- スマホ対応 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- タイトル -->
+  <title>ログイン</title>
+
+  <!-- CSS読み込み -->
+ <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+
+  <!-- ログイン画面全体 -->
+  <div class="window">
+
+    <!-- 上のバー -->
+    <div class="topbar">
+
+      <!-- ×ボタン -->
+      <button class="closeBtn" id="backBtn">
+        ×
+      </button>
+
+      <!-- タイトル -->
+      <h2>ログイン</h2>
+
+    </div>
+
+
+    <!-- メール入力画面 -->
+
+    <div class="content" id="emailPage">
+
+      <!-- タイトル -->
+      <h1>ログイン</h1>
+
+      <!-- メールアドレス入力 -->
+      <input
+        type="email"
+        id="emailInput"
+        placeholder="メールアドレス"
+      >
+
+      <!-- アカウント作成 -->
+      <p class="createLink" id="createAccount">
+
+        アカウント作成
+
+      </p>
+
+      <!-- 次へボタン -->
+      <button class="nextBtn" id="nextBtn">
+
+        次へ
+
+      </button>
+
+    </div>
+
+
+    <!-- パスワード画面 -->
+
+    <div class="content hidden" id="passwordPage">
+
+      <!-- タイトル -->
+      <h1>ログイン</h1>
+
+      <!-- パスワード入力エリア -->
+      <div class="passwordArea">
+
+        <!-- パスワード入力 -->
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="パスワード"
+        >
+
+        <!-- パスワード表示 -->
+        <button id="eyeBtn">
+
+          🐵
+
+        </button>
+
+      </div>
+
+      <!-- OKボタン -->
+      <button class="okBtn" id="okBtn">
+
+        OK
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Firebase -->
+  <script type="module" src="../js/firebase.js"></script>
+
+  <!-- JavaScript -->
+  <script type="module" src="../js/login.js"></script>
+
+</body>
+
+</html>
