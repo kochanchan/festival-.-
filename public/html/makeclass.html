@@ -1,0 +1,80 @@
+<!-- クラス作成画面 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>クラスを作成</title>
+
+  <link rel="stylesheet" href="../css/makeclass.css">
+</head>
+
+<body>
+
+  <div class="window">
+
+    <div class="topbar">
+      <button class="backBtn" id="backBtn">＜</button>
+      <h2>クラスを作成</h2>
+    </div>
+
+    <div class="content">
+
+      <label>クラス名</label>
+      <input type="text" id="classNameInput" placeholder="例：2年3組">
+
+      <label>出し物名</label>
+      <input type="text" id="eventNameInput" placeholder="例：お化け屋敷">
+
+      <label>リーダー名</label>
+      <input type="text" id="leaderNameInput" placeholder="ニックネーム">
+
+      <label>アイコン設定（任意）</label>
+
+      <!-- 選んだ写真を表示 -->
+      <img id="previewImage" class="previewImage" src="" alt="選んだ写真">
+
+      <!-- アイコン選択 -->
+      <div class="iconArea">
+
+        <button class="iconChoice photoIcon selected" id="imageBtn">
+          📷
+          <span>写真を選択</span>
+        </button>
+
+        <button class="iconChoice presetIcon" data-icon="🍩">🍩</button>
+        <button class="iconChoice presetIcon" data-icon="🍭">🍭</button>
+        <button class="iconChoice presetIcon" data-icon="🥤">🥤</button>
+        <button class="iconChoice presetIcon" data-icon="🧁">🧁</button>
+
+      </div>
+
+      <!-- 本物のファイル選択は隠す -->
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        class="fileInput"
+      >
+
+      <label>クラスコード</label>
+
+      <div class="codeArea">
+        <input type="text" id="classCodeInput" readonly>
+        <button id="codeBtn">↻</button>
+      </div>
+
+      <button class="makeBtn" id="makeBtn">作成</button>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="../js/makeclass.js"></script>
+
+</body>
+
+</html>

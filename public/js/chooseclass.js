@@ -7,7 +7,7 @@ const joinClassBtn = document.getElementById("joinClassBtn");
 
 // クラス作成ページへ移動
 createClassBtn.addEventListener("click", () => {
-  location.href = "createclass.html";
+  location.href = "makeclass.html";
 });
 
 
