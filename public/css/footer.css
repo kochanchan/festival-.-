@@ -1,0 +1,46 @@
+/* 共通フッター */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background: white;
+  border-top: 1px solid #333;
+}
+
+
+/* フッターボタン */
+
+.footerBtn {
+  border: none;
+  background: white;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+/* 絵文字 */
+
+.footerBtn span {
+  display: block;
+
+  font-size: 22px;
+}
+
+
+/* 文字 */
+
+.footerBtn p {
+  margin: 2px 0 0;
+
+  font-size: 11px;
+}

@@ -1,0 +1,65 @@
+<!-- 買い出し画面 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>買い出し</title>
+
+  <link rel="stylesheet" href="../css/shopping.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="tabs">
+      <button class="tab active" data-filter="all">すべて</button>
+      <button class="tab" data-filter="notYet">未購入</button>
+      <button class="tab" data-filter="done">購入済み</button>
+    </div>
+
+    <div class="topCards">
+
+      <div class="infoCard">
+        <h3>全体の進捗</h3>
+        <p><span id="progressPercent">0%</span></p>
+
+        <div class="progressBar">
+          <div class="progressInner" id="progressInner"></div>
+        </div>
+
+        <p id="progressCount">0/0品目</p>
+      </div>
+
+      <div class="infoCard" id="memberInfoBtn">
+        <h3>メンバー<br>情報</h3>
+      </div>
+
+    </div>
+
+    <div class="shoppingBox">
+
+      <div class="listTitle">
+        <h3>買い出しリスト</h3>
+        <button id="addItemBtn">＋</button>
+      </div>
+
+      <div id="shoppingList"></div>
+
+    </div>
+
+    <div id="footerArea"></div>
+
+  </div>
+
+  <script src="../js/shopping.js"></script>
+  <script src="../js/footer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!-- 買い出しリスト追加画面 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>買い出しリスト追加</title>
+
+  <link rel="stylesheet" href="../css/addshopping.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="topbar">
+      <button id="backBtn">＜</button>
+      <h2>買い出しリスト追加</h2>
+    </div>
+
+    <label>商品名</label>
+    <input type="text" id="nameInput" placeholder="例）わりばし">
+
+    <label>数量</label>
+    <div class="countArea">
+      <input type="number" id="countInput" value="20">
+
+      <select id="unitSelect">
+        <option>個</option>
+        <option>本</option>
+        <option>袋</option>
+        <option>セット</option>
+      </select>
+    </div>
+
+    <label>追加した係</label>
+    <select id="roleSelect">
+      <option>調理係</option>
+      <option>装飾係</option>
+      <option>買い出し係</option>
+      <option>会計係</option>
+    </select>
+
+    <label>店舗</label>
+    <select id="shopSelect">
+      <option>DAISO</option>
+      <option>Seria</option>
+      <option>スーパー</option>
+      <option>その他</option>
+    </select>
+
+    <label>メモ（任意）</label>
+    <textarea id="memoInput"></textarea>
+
+    <label>画像</label>
+    <input type="file" id="imageInput" accept="image/*">
+
+    <button id="addBtn">追加</button>
+
+  </div>
+
+  <script src="../js/addshopping.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!-- リーダー・先生用ホーム画面 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ホーム</title>
+
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="classBox">
+
+      <div class="classTop">
+
+        <div class="classText">
+          <div class="titleRow">
+            <h1 id="className">2年3組</h1>
+            <span id="userRole">リーダー</span>
+          </div>
+
+          <p id="eventName">出し物：たこ焼き</p>
+        </div>
+
+        <button class="classIcon" id="classIcon">🎪</button>
+
+        <input
+          type="file"
+          id="iconInput"
+          accept="image/*"
+          class="fileInput"
+        >
+
+      </div>
+
+      <p id="classCode">クラスコード：A1B2C3</p>
+
+    </div>
+
+
+    <div class="updateBox">
+
+      <h2>最新の更新</h2>
+
+      <div class="updateList">
+        <p>🛒 紙コップを購入済みに変更しました</p>
+        <p>📋 装飾の進捗を更新しました</p>
+        <p>🔔 新しいお知らせが追加されました</p>
+        <p>👥 メンバー情報が更新されました</p>
+        <p>📝 係の設定が変更されました</p>
+        <p>🛒 買い出しリストが追加されました</p>
+      </div>
+
+    </div>
+
+
+    <div class="adminMenu">
+
+      <button id="classCodeBtn">クラス<br>コード</button>
+      <button id="memberBtn">メンバー<br>管理</button>
+      <button id="roleBtn">係の<br>設定</button>
+      <button id="noticeBtn">お知らせ<br>作成</button>
+
+    </div>
+
+
+    <div id="footerArea"></div>
+
+  </div>
+
+  <script src="../js/home.js"></script>
+  <script src="../js/footer.js"></script>
+
+</body>
+
+</html>

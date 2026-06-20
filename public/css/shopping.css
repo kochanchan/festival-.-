@@ -1,0 +1,197 @@
+/* 画面全体 */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-family: sans-serif;
+}
+
+
+/* ページ */
+
+.page {
+  min-height: 100vh;
+  padding: 16px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+}
+
+
+/* タブ */
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.tab {
+  border: none;
+  background: none;
+  font-size: 16px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom: 2px solid #333;
+}
+
+
+/* 上カード */
+
+.topCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.infoCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.infoCard h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+#progressPercent {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+/* 進捗バー */
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background: #eeeeee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressInner {
+  width: 0%;
+  height: 100%;
+  background: #333;
+}
+
+
+/* 買い出しリスト */
+
+.shoppingBox {
+  margin-top: 16px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listTitle h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#addItemBtn {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #ddd;
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  line-height: 1;
+
+  padding: 0;
+  cursor: pointer;
+}
+
+
+/* リスト1行 */
+
+.shoppingItem {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 0.9fr;
+  gap: 8px;
+
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+
+  font-size: 14px;
+}
+
+.shoppingItem:last-child {
+  border-bottom: none;
+}
+
+.itemName {
+  font-weight: bold;
+}
+
+.itemStatus {
+  text-align: center;
+}
+
+.itemShop {
+  text-align: right;
+}
+
+.itemCount {
+  font-size: 12px;
+  color: #777;
+}
+/* 商品画像 */
+
+.itemImage {
+  width: 45px;
+  height: 45px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  border: 1px solid #ddd;
+
+  flex-shrink: 0;
+}
+/* 写真＋係 */
+
+.itemMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+
+/* 商品画像 */
+
+.itemImage {
+  width: 32px;
+  height: 32px;
+
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  flex-shrink: 0;
+}

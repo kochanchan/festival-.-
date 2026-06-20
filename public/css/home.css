@@ -1,0 +1,190 @@
+/* 画面全体 */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-family: sans-serif;
+}
+
+
+/* ページ */
+
+.page {
+  min-height: 100vh;
+  padding: 16px;
+  padding-bottom: 95px;
+  box-sizing: border-box;
+}
+
+
+/* クラス情報 */
+
+.classBox {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  padding: 16px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.classTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.classText {
+  flex: 1;
+}
+
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.titleRow h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+
+#userRole {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eeeeee;
+  font-size: 12px;
+}
+
+
+#eventName {
+  margin: 10px 0 0;
+  font-size: 15px;
+}
+
+
+/* アイコン */
+
+.classIcon {
+  width: 62px;
+  height: 62px;
+
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: #f1f1f1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+
+.classIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.fileInput {
+  display: none;
+}
+
+
+/* クラスコード */
+
+#classCode {
+  display: inline-block;
+
+  margin: 14px 0 0;
+  padding: 8px 12px;
+
+  border-radius: 10px;
+  background: #f3f3f3;
+
+  font-size: 13px;
+}
+
+
+/* 最新の更新 */
+
+.updateBox {
+  position: relative;
+
+  margin-top: 18px;
+
+  height: 220px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  padding: 18px;
+
+  overflow-y: auto;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.updateBox h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+
+.updateList p {
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+
+/* 管理メニュー */
+
+.adminMenu {
+  margin-top: 22px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.adminMenu button {
+  height: 90px;
+
+  background: white;
+  border: none;
+  border-right: 1px solid #ddd;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+
+.adminMenu button:last-child {
+  border-right: none;
+}

@@ -1,0 +1,98 @@
+/* 画面全体 */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-family: sans-serif;
+}
+
+
+/* ページ */
+
+.page {
+  min-height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+
+/* 上のバー */
+
+.topbar {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.topbar h2 {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#backBtn {
+  position: absolute;
+  left: 0;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* ラベル */
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+
+/* 入力欄 */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+
+/* 数量 */
+
+.countArea {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 8px;
+}
+
+
+/* 追加ボタン */
+
+#addBtn {
+  display: block;
+
+  margin: 30px auto 0;
+  padding: 10px 28px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  font-size: 18px;
+  cursor: pointer;
+}
